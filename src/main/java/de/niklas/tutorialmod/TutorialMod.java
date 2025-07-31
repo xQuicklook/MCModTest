@@ -2,6 +2,7 @@ package de.niklas.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import de.niklas.tutorialmod.block.ModBlocks;
+import de.niklas.tutorialmod.item.ModCreativeModeTabs;
 import de.niklas.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -38,6 +39,8 @@ public class TutorialMod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
