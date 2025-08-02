@@ -1,6 +1,7 @@
 package de.niklas.tutorialmod.block;
 
 import de.niklas.tutorialmod.TutorialMod;
+import de.niklas.tutorialmod.block.custom.MagicBlock;
 import de.niklas.tutorialmod.item.ModItems;
 import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -35,6 +36,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
+    public static final RegistryObject<Block> MAGIC_BLOCK =registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2).requiresCorrectToolForDrops()));
 
 
 
