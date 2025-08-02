@@ -1,7 +1,7 @@
 {
-"variants": {
-  "": {
-    "model": "tutorialmod:block/alexandrite_block"
+  "variants": {
+    "": {
+      "model": "tutorialmod:block/alexandrite_block"
+    }
   }
-}
 }
