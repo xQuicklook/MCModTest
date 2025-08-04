@@ -1,6 +1,7 @@
 package de.niklas.tutorialmod.block;
 
 import de.niklas.tutorialmod.TutorialMod;
+import de.niklas.tutorialmod.block.custom.AlexandriteLampBlock;
 import de.niklas.tutorialmod.block.custom.MagicBlock;
 import de.niklas.tutorialmod.item.ModItems;
 import net.minecraft.client.tutorial.Tutorial;
@@ -64,6 +65,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<TrapDoorBlock> ALEXANDRITE_TRAP_DOOR = registerBlock("alexandrite_trap_door",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> ALEXANDRITE_LAMP = registerBlock("alexandrite_lamp",
+            () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
