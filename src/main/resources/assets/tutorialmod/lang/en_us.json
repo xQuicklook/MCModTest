@@ -6,6 +6,22 @@
   "item.tutorialmod.kohlrabi": "Kohlrabi",
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
 
+  "item.tutorialmod.alexandrite_sword": "Alexandrite Sword",
+  "item.tutorialmod.alexandrite_pickaxe": "Alexandrite Pickaxe",
+  "item.tutorialmod.alexandrite_shovel": "Alexandrite Shovel",
+  "item.tutorialmod.alexandrite_axe": "Alexandrite Axe",
+  "item.tutorialmod.alexandrite_hoe": "Alexandrite Hoe",
+
+  "item.tutorialmod.alexandrite_hammer": "Alexandrite Hammer",
+
+  "item.tutorialmod.alexandrite_helmet": "Alexandrite Helmet",
+  "item.tutorialmod.alexandrite_chestplate": "Alexandrite Chestplate",
+  "item.tutorialmod.alexandrite_leggins": "Alexandrite Leggins",
+  "item.tutorialmod.alexandrite_boots": "Alexandrite Boots",
+
+  "item.tutorialmod.alexandrite_horse_armor": "Alexandrite Horse Armor",
+  "item.tutorialmod.kaupen_armor_trim_smithing_template": "Kaupen Trim Template",
+
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
@@ -37,5 +53,8 @@
   "tooltip.tutorialmod.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information",
 
-  "tooltip.tutorialmod.kohlrabi": "This tastes GREAT"
+  "tooltip.tutorialmod.kohlrabi": "This tastes GREAT",
+  "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Trim",
+  "trim_material.tutorialMod.alexandrite": "Alexandrite Material"
+
 }

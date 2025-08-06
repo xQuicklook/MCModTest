@@ -27,6 +27,23 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.KOHLRABI.get());
                         output.accept(ModItems.AURORA_ASHES.get());
 
+                        output.accept(ModItems.ALEXANDRITE_SWORD.get());
+                        output.accept(ModItems.ALEXANDRITE_PICKAXE.get());
+                        output.accept(ModItems.ALEXANDRITE_SHOVEL.get());
+                        output.accept(ModItems.ALEXANDRITE_AXE.get());
+                        output.accept(ModItems.ALEXANDRITE_HOE.get());
+
+                        output.accept(ModItems.ALEXANDRITE_HAMMER.get());
+
+                        output.accept(ModItems.ALEXANDRITE_HELMET.get());
+                        output.accept(ModItems.ALEXANDRITE_CHESTPLATE.get());
+                        output.accept(ModItems.ALEXANDRITE_LEGGINS.get());
+                        output.accept(ModItems.ALEXANDRITE_BOOTS.get());
+
+                        output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
+                        output.accept(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
+
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("alexanderite_blocks_tab",

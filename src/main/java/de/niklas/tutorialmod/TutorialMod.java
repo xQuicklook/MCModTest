@@ -2,8 +2,10 @@ package de.niklas.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import de.niklas.tutorialmod.block.ModBlocks;
+import de.niklas.tutorialmod.component.ModDateComponentTypes;
 import de.niklas.tutorialmod.item.ModCreativeModeTabs;
 import de.niklas.tutorialmod.item.ModItems;
+import de.niklas.tutorialmod.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -45,6 +47,8 @@ public class TutorialMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModDateComponentTypes.DATA_COMPONENT_TYPES.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -83,7 +87,7 @@ public class TutorialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }
