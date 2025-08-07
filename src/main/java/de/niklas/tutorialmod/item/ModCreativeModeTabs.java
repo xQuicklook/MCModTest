@@ -43,6 +43,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
                         output.accept(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
 
+                        output.accept(ModItems.KAUPEN_BOW.get());
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+
 
                     }).build());
 

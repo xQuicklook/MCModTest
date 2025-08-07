@@ -4,6 +4,7 @@ import de.niklas.tutorialmod.TutorialMod;
 import de.niklas.tutorialmod.block.custom.AlexandriteLampBlock;
 import de.niklas.tutorialmod.block.custom.MagicBlock;
 import de.niklas.tutorialmod.item.ModItems;
+import de.niklas.tutorialmod.sound.ModSounds;
 import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -13,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -39,7 +41,7 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> MAGIC_BLOCK =registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2).noLootTable()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2).noLootTable().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final RegistryObject<StairBlock> ALEXANDRITE_STAIRS = registerBlock("alexandrite_stairs",
             () -> new StairBlock(ModBlocks.ALEXANDRITE_BLOCK.get().defaultBlockState(),

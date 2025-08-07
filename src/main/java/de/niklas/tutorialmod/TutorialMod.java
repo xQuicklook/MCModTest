@@ -5,6 +5,7 @@ import de.niklas.tutorialmod.block.ModBlocks;
 import de.niklas.tutorialmod.component.ModDateComponentTypes;
 import de.niklas.tutorialmod.item.ModCreativeModeTabs;
 import de.niklas.tutorialmod.item.ModItems;
+import de.niklas.tutorialmod.sound.ModSounds;
 import de.niklas.tutorialmod.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -47,7 +48,8 @@ public class TutorialMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        ModDateComponentTypes.DATA_COMPONENT_TYPES.register(modEventBus);
+        ModDateComponentTypes.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
