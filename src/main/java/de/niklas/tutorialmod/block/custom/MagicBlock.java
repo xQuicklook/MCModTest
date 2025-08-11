@@ -1,6 +1,7 @@
 package de.niklas.tutorialmod.block.custom;
 
 import de.niklas.tutorialmod.item.ModItems;
+import de.niklas.tutorialmod.particle.ModParticles;
 import de.niklas.tutorialmod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -31,6 +32,9 @@ public class MagicBlock extends Block {
     protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos,
                                                Player pPlayer, BlockHitResult pHitResult) {
         pLevel.playSound(pPlayer, pPos, SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS, 1f, 1f );
+
+        pLevel.addParticle(ModParticles.ALEXANDRITE_PARTICLES.get(), pPos.getX() + 0.5, pPos.getY() + 1, pPos.getZ() + 0.5,
+                0, 1, 0);
 
         return InteractionResult.SUCCESS;
     }

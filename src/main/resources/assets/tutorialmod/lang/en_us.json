@@ -22,13 +22,39 @@
   "item.tutorialmod.alexandrite_horse_armor": "Alexandrite Horse Armor",
   "item.tutorialmod.kaupen_armor_trim_smithing_template": "Kaupen Trim Template",
 
-  "item.tutorialmod.kaupen:bow": "Kaupen Bow",
+  "item.tutorialmod.kaupen_bow": "Kaupen Bow",
+
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "item.tutorialmod.kohlrabi_seeds": "Kohlrabi Seeds",
+  "item.tutorialmod.honey_berries": "Honey Berries",
+
+  "item.tutorialmod.triceratops_spawn_egg": "Triceratops Spawn Egg",
+  "item.tutorialmod.tomahawk": "Tomahawk",
+
+  "item.tutorialmod.radiation_staff": "Radiation Staff",
 
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
   "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
+
+  "block.tutorialmod.alexandrite_end_ore": "Alexandrite End Ore",
+  "block.tutorialmod.alexandrite_nether_ore": "Alexandrite Nether Ore",
+
+  "block.tutorialmod.walnut_log": "Walnut Log",
+  "block.tutorialmod.walnut_planks": "Walnut Planks",
+  "block.tutorialmod.walnut_wood": "Walnut Wood",
+  "block.tutorialmod.stripped_walnut_log": "Stripped Walnut Log",
+  "block.tutorialmod.stripped_walnut_wood": "Stripped Walnut Wood",
+  "block.tutorialmod.walnut_leaves": "Walnut Leaves",
+
+  "block.tutorialmod.walnut_sapling": "Walnut Sapling",
 
   "block.tutorialmod.magic_block": "Magic Block",
 
@@ -47,6 +73,20 @@
 
   "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
 
+  "block.tutorialmod.kohlrabi_crop": "Kohlrabi Crop",
+  "block.tutorialmod.honey_berry_bush": "Honey Berry Bush",
+
+  "block.tutorialmod.chair": "Chair",
+  "block.tutorialmod.pedestal": "Pedestal",
+  "block.tutorialmod.growth_chamber": "Growth Chamber",
+
+
+  "entity.minecraft.villager.tutorialmod.kaupenger": "Kaupenger",
+
+  "effect.tutorialmod.slimey": "Slimey",
+
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
+
 
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",
@@ -58,6 +98,9 @@
 
   "tooltip.tutorialmod.kohlrabi": "This tastes GREAT",
   "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Trim",
-  "trim_material.tutorialMod.alexandrite": "Alexandrite Material"
+  "trim_material.tutorialMod.alexandrite": "Alexandrite Material",
+
+  "entity.tutorialmod.triceratops": "Triceratops",
+  "entity.tutorialmod.tomahawk": "Tomahawk"
 
 }

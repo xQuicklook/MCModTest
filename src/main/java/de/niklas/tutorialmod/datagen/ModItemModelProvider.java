@@ -70,6 +70,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
         basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
         basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+
+        basicItem(ModItems.KOHLRABI_SEEDS.get());
+        basicItem(ModItems.HONEY_BERRIES.get());
+
+        saplingItem(ModBlocks.WALNUT_SAPLING);
+
+        withExistingParent(ModItems.TRICERATOPS_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     // Shoutout to El_Redstoniano for making this
