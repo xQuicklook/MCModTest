@@ -2,6 +2,7 @@ package de.niklas.tutorialmod.entity;
 
 import de.niklas.tutorialmod.TutorialMod;
 import de.niklas.tutorialmod.entity.custom.ChairEntity;
+import de.niklas.tutorialmod.entity.custom.RadiationProjectileEntity;
 import de.niklas.tutorialmod.entity.custom.TomahawkProjectileEntity;
 import de.niklas.tutorialmod.entity.custom.TriceratopsEntity;
 import net.minecraft.world.entity.EntityType;
@@ -26,6 +27,15 @@ public class ModEntities {
     public static final RegistryObject<EntityType<ChairEntity>> CHAIR =
             ENTITY_TYPES.register("chair_entity", () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("chair_entity"));
+
+    public static final RegistryObject<EntityType<RadiationProjectileEntity>> RADIATION_PROJECTILE =
+            ENTITY_TYPES.register("radiation_projectile", () ->
+                    EntityType.Builder.<RadiationProjectileEntity>of(RadiationProjectileEntity::new, MobCategory.MISC)
+                            .sized(0.25F, 0.25F)
+                            .clientTrackingRange(8)
+                            .updateInterval(10)
+                            .build("radiation_projectile")
+            );
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);

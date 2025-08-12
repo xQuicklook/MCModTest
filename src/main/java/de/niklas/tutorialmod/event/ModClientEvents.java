@@ -1,9 +1,11 @@
 package de.niklas.tutorialmod.event;
 
 import de.niklas.tutorialmod.TutorialMod;
+import de.niklas.tutorialmod.entity.ModEntities;
 import de.niklas.tutorialmod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ComputeFovModifierEvent;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -24,4 +26,5 @@ public class ModClientEvents {
             event.setNewFovModifier(fovModifier);
         }
     }
+
 }

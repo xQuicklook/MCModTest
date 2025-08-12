@@ -3,10 +3,13 @@ package de.niklas.tutorialmod.item;
 import de.niklas.tutorialmod.TutorialMod;
 import de.niklas.tutorialmod.block.ModBlocks;
 import de.niklas.tutorialmod.entity.ModEntities;
+import de.niklas.tutorialmod.entity.custom.RadiationProjectileEntity;
 import de.niklas.tutorialmod.item.custom.*;
 import de.niklas.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +18,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
+
+import static de.niklas.tutorialmod.entity.ModEntities.ENTITY_TYPES;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -96,7 +101,7 @@ public class ModItems {
             () -> new TomahawkItem(new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> RADIATION_STAFF = ITEMS.register("radiation_staff",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new RadiationStaffItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

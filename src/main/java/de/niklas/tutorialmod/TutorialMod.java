@@ -9,6 +9,7 @@ import de.niklas.tutorialmod.effect.ModEffects;
 import de.niklas.tutorialmod.enchantment.ModEnchantmentEffects;
 import de.niklas.tutorialmod.entity.ModEntities;
 import de.niklas.tutorialmod.entity.client.ChairRenderer;
+import de.niklas.tutorialmod.entity.client.RadiationStaffRenderer;
 import de.niklas.tutorialmod.entity.client.TomahawkProjectileRenderer;
 import de.niklas.tutorialmod.entity.client.TriceratopsRenderer;
 import de.niklas.tutorialmod.item.ModCreativeModeTabs;
@@ -136,6 +137,7 @@ public class TutorialMod {
             EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
 
             EntityRenderers.register(ModEntities.CHAIR.get(), ChairRenderer::new);
+            EntityRenderers.register(ModEntities.RADIATION_PROJECTILE.get(), RadiationStaffRenderer::new);
 
             MenuScreens.register(ModMenuTypes.PEDESTAL_MENU.get(), PedestalScreen::new);
             MenuScreens.register(ModMenuTypes.GROWTH_CHAMBER_MENU.get(), GrowthChamberScreen::new);
